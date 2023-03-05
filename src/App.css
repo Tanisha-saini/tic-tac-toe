@@ -71,23 +71,22 @@ div.status{
 
 /* button styles */
 .restart {
-  padding: 15px 150px;
+  padding: 1rem 9rem;
   color: black;
   background-color: #2ec5be;
-  border-color: #2ec5be;
   border-radius: 0.25rem;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   font-size: 1rem;
+  border: none;
 }
 
 .restart:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: #2ec5be8e;
 }
 
 .restart:focus {
-  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+  /* box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%); */
 }
 
 .WinnerBanner{
