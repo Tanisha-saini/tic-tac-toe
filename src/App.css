@@ -22,11 +22,11 @@ body {
 }
 
 .entire-board{
-  margin: 4vh;
+  margin: 3vh;
 }
 
 .heading{
-  font-size:5rem;
+  font-size:10vh;
   margin: 5vh;
 }
 
@@ -71,7 +71,6 @@ div.status{
   background-color: #f0b234;
   font-size: 1rem;
   border-radius: 0.25rem;
-  margin: 2vw;
   padding: 1rem 12vw;
 }
 
@@ -94,7 +93,7 @@ div.status{
 .WinnerBanner{
   background-color: #f0b234;
   position: absolute;
-  width:100vw;
+  width:100%;
   height:20vh;
   color: #fff;
   font-weight: 600;
@@ -120,7 +119,6 @@ div.status{
 
   div .status{
     font-size: 1rem;
-    margin: 2rem;
   }
 
   .WinnerBanner{
