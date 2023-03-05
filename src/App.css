@@ -1,0 +1,132 @@
+body {
+  font: 20px "Century Gothic", Futura, sans-serif;
+  background-color: #192a32;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.entire-board{
+  margin: 2rem;
+}
+
+.heading{
+  font-size:5rem;
+}
+
+.heading :nth-of-type(odd){
+  color:#2ec5be;
+}
+
+.heading:nth-of-type(odd){
+  color:#f0b234;
+}
+
+.square {
+  border: 1px solid #1f3540;
+  border-radius: 3px;
+  font-size: 40px;
+  height: 80px;
+  margin: -1px 10px 10px 0;
+  padding:5px;
+  width: 90px;
+  background-color: #1f3540;
+  font-weight: 700;
+  float: left;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.status, .restart {
+  margin-top: 10px;
+}
+
+button.square[data='X']{
+  color:#2ec5be;
+}
+
+button.square[data='O']{
+  color:#f0b234;
+}
+
+div.status{
+  background-color: #f0b234;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  margin: 1rem;
+  padding: 1rem 9rem;
+}
+
+/* button styles */
+.restart {
+  padding: 15px 150px;
+  color: black;
+  background-color: #2ec5be;
+  border-color: #2ec5be;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-size: 1rem;
+}
+
+.restart:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.restart:focus {
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%);
+}
+
+.WinnerBanner{
+  background-color: #f0b234;
+  position: absolute;
+  width:100%;
+  height:10rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 5rem;
+  display: grid;
+  place-items: center;
+  top:50%;
+  transform:translateY(-50%);
+  box-shadow: 0px 0px 10px 20px #f0b234;
+}
+
+@media screen and (max-width:768px){
+  .heading{
+    margin-top: 5rem;
+    font-size: 3rem;
+  }
+
+  .square{
+    font-size: 10px;
+    height: 70px;
+    margin: -1px 10px 10px 0;
+    padding:5px;
+    width: 80px;
+    font-weight: 700;
+  }
+
+  div.status{
+    font-size: 1rem;
+    margin: 3rem;
+    padding: 1rem 5rem;
+  }
+
+  .restart{
+    padding: 15px 80px;
+  }
+}
