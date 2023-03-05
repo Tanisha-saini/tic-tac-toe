@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font: 20px "Century Gothic", Futura, sans-serif;
   background-color: #192a32;
@@ -17,11 +22,12 @@ body {
 }
 
 .entire-board{
-  margin: 2rem;
+  margin: 4vh;
 }
 
 .heading{
   font-size:5rem;
+  margin: 5vh;
 }
 
 .heading :nth-of-type(odd){
@@ -36,10 +42,10 @@ body {
   border: 1px solid #1f3540;
   border-radius: 3px;
   font-size: 40px;
-  height: 80px;
   margin: -1px 10px 10px 0;
   padding:5px;
-  width: 90px;
+  height: min(90px,20vw);
+  width: min(90px,20vw);
   background-color: #1f3540;
   font-weight: 700;
   float: left;
@@ -65,13 +71,13 @@ div.status{
   background-color: #f0b234;
   font-size: 1rem;
   border-radius: 0.25rem;
-  margin: 1rem;
-  padding: 1rem 9rem;
+  margin: 2vw;
+  padding: 1rem 12vw;
 }
 
 /* button styles */
 .restart {
-  padding: 1rem 9rem;
+  padding: 1rem 12vw;
   color: black;
   background-color: #2ec5be;
   border-radius: 0.25rem;
@@ -85,15 +91,11 @@ div.status{
   background-color: #2ec5be8e;
 }
 
-.restart:focus {
-  /* box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 50%); */
-}
-
 .WinnerBanner{
   background-color: #f0b234;
   position: absolute;
-  width:100%;
-  height:10rem;
+  width:100vw;
+  height:20vh;
   color: #fff;
   font-weight: 600;
   font-size: 5rem;
@@ -106,26 +108,23 @@ div.status{
 
 @media screen and (max-width:768px){
   .heading{
-    margin-top: 5rem;
     font-size: 3rem;
   }
 
   .square{
-    font-size: 10px;
-    height: 70px;
+    font-size: 2rem;
     margin: -1px 10px 10px 0;
     padding:5px;
-    width: 80px;
     font-weight: 700;
   }
 
-  div.status{
+  div .status{
     font-size: 1rem;
-    margin: 3rem;
-    padding: 1rem 5rem;
+    margin: 2rem;
   }
 
-  .restart{
-    padding: 15px 80px;
+  .WinnerBanner{
+    font-size: 2rem;
+    height:10vh;
   }
 }
